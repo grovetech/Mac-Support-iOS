@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E159609EC39CD138280D2F5 /* Pods_Grove_SupportUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B64D9ADAA6A091C464E2BA4 /* Pods_Grove_SupportUITests.framework */; };
+		4CF6FF73BE1AC018E44FCE94 /* Pods_Grove_SupportTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EFF298F307221976D62367 /* Pods_Grove_SupportTests.framework */; };
+		71F7912B8651885C83134B88 /* Pods_Grove_Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13634D73C6C95718008984F6 /* Pods_Grove_Support.framework */; };
 		FC096DE222AF28890038BB7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DE122AF28890038BB7E /* AppDelegate.swift */; };
-		FC096DE422AF28890038BB7E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DE322AF28890038BB7E /* FirstViewController.swift */; };
-		FC096DE622AF28890038BB7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DE522AF28890038BB7E /* SecondViewController.swift */; };
+		FC096DE422AF28890038BB7E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DE322AF28890038BB7E /* HomeViewController.swift */; };
+		FC096DE622AF28890038BB7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DE522AF28890038BB7E /* MapViewController.swift */; };
 		FC096DE922AF28890038BB7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC096DE722AF28890038BB7E /* Main.storyboard */; };
 		FC096DEB22AF288B0038BB7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC096DEA22AF288B0038BB7E /* Assets.xcassets */; };
 		FC096DEE22AF288B0038BB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC096DEC22AF288B0038BB7E /* LaunchScreen.storyboard */; };
 		FC096DF922AF288B0038BB7E /* Grove_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DF822AF288B0038BB7E /* Grove_SupportTests.swift */; };
 		FC096E0422AF288B0038BB7E /* Grove_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096E0322AF288B0038BB7E /* Grove_SupportUITests.swift */; };
+		FC096E1222B0AABC0038BB7E /* RoundRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096E1122B0AABC0038BB7E /* RoundRectButton.swift */; };
+		FCA3A15A22B4BF5200F5F3D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3A15922B4BF5200F5F3D8 /* WebViewController.swift */; };
+		FCA3A15C22B5486D00F5F3D8 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3A15B22B5486D00F5F3D8 /* TicketViewController.swift */; };
+		FCA3A15E22B5491800F5F3D8 /* reload.html in Resources */ = {isa = PBXBuildFile; fileRef = FCA3A15D22B5491800F5F3D8 /* reload.html */; };
+		FCA3A16022B54A5E00F5F3D8 /* spinnerbar.gif in Resources */ = {isa = PBXBuildFile; fileRef = FCA3A15F22B54A5E00F5F3D8 /* spinnerbar.gif */; };
+		FCA3A16322B54E9600F5F3D8 /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = FCA3A16222B54E9600F5F3D8 /* common.js */; };
+		FCA3A16522B54EC400F5F3D8 /* common.css in Resources */ = {isa = PBXBuildFile; fileRef = FCA3A16422B54EC400F5F3D8 /* common.css */; };
+		FCB05E5622B55DCE0046479E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB05E5522B55DCE0046479E /* libc++.tbd */; };
+		FCB05E5822B55DD80046479E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB05E5722B55DD80046479E /* libz.tbd */; };
+		FCB21FF122B342D500EED086 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB21FF022B342D400EED086 /* WebKit.framework */; };
+		FCB21FF222B342EC00EED086 /* FeedItemWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB21FEC22B341D100EED086 /* FeedItemWebViewController.swift */; };
+		FCB21FF322B342EC00EED086 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB21FED22B341D100EED086 /* FeedListViewController.swift */; };
+		FCB21FF422B342EC00EED086 /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB21FEE22B341D100EED086 /* XmlParserManager.swift */; };
+		FCB21FF622B3DDEF00EED086 /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB21FF522B3DDEF00EED086 /* TopBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13634D73C6C95718008984F6 /* Pods_Grove_Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grove_Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E90622C05A7EA1820409D7D /* Pods-Grove SupportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove SupportTests.debug.xcconfig"; path = "Target Support Files/Pods-Grove SupportTests/Pods-Grove SupportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48EFF298F307221976D62367 /* Pods_Grove_SupportTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grove_SupportTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59BC0A0207321DED68D665FE /* Pods-Grove SupportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove SupportTests.release.xcconfig"; path = "Target Support Files/Pods-Grove SupportTests/Pods-Grove SupportTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B64D9ADAA6A091C464E2BA4 /* Pods_Grove_SupportUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grove_SupportUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D61C0DCA196E3D3722F9303 /* Pods-Grove Support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove Support.debug.xcconfig"; path = "Target Support Files/Pods-Grove Support/Pods-Grove Support.debug.xcconfig"; sourceTree = "<group>"; };
+		8BC3003547465B6689B046D8 /* Pods-Grove SupportUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove SupportUITests.release.xcconfig"; path = "Target Support Files/Pods-Grove SupportUITests/Pods-Grove SupportUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8A54D37C0F837CD85FC7BF5 /* Pods-Grove SupportUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove SupportUITests.debug.xcconfig"; path = "Target Support Files/Pods-Grove SupportUITests/Pods-Grove SupportUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9CBE950523A6BCB5F2C397 /* Pods-Grove Support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grove Support.release.xcconfig"; path = "Target Support Files/Pods-Grove Support/Pods-Grove Support.release.xcconfig"; sourceTree = "<group>"; };
 		FC096DDE22AF28890038BB7E /* Grove Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grove Support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC096DE122AF28890038BB7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC096DE322AF28890038BB7E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FC096DE522AF28890038BB7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FC096DE322AF28890038BB7E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC096DE522AF28890038BB7E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FC096DE822AF28890038BB7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC096DEA22AF288B0038BB7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC096DED22AF288B0038BB7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +75,21 @@
 		FC096DFF22AF288B0038BB7E /* Grove SupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grove SupportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC096E0322AF288B0038BB7E /* Grove_SupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grove_SupportUITests.swift; sourceTree = "<group>"; };
 		FC096E0522AF288B0038BB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC096E1122B0AABC0038BB7E /* RoundRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRectButton.swift; sourceTree = "<group>"; };
+		FCA3A15922B4BF5200F5F3D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FCA3A15B22B5486D00F5F3D8 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		FCA3A15D22B5491800F5F3D8 /* reload.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reload.html; sourceTree = "<group>"; };
+		FCA3A15F22B54A5E00F5F3D8 /* spinnerbar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinnerbar.gif; sourceTree = "<group>"; };
+		FCA3A16222B54E9600F5F3D8 /* common.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
+		FCA3A16422B54EC400F5F3D8 /* common.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = common.css; sourceTree = "<group>"; };
+		FCB05E5522B55DCE0046479E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FCB05E5722B55DD80046479E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FCB05E5922B55E4A0046479E /* Grove Support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Grove Support.entitlements"; sourceTree = "<group>"; };
+		FCB21FEC22B341D100EED086 /* FeedItemWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemWebViewController.swift; sourceTree = "<group>"; };
+		FCB21FED22B341D100EED086 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
+		FCB21FEE22B341D100EED086 /* XmlParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
+		FCB21FF022B342D400EED086 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FCB21FF522B3DDEF00EED086 /* TopBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB05E5822B55DD80046479E /* libz.tbd in Frameworks */,
+				FCB05E5622B55DCE0046479E /* libc++.tbd in Frameworks */,
+				FCB21FF122B342D500EED086 /* WebKit.framework in Frameworks */,
+				71F7912B8651885C83134B88 /* Pods_Grove_Support.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF6FF73BE1AC018E44FCE94 /* Pods_Grove_SupportTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E159609EC39CD138280D2F5 /* Pods_Grove_SupportUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7606CA6BF991D7B0F810AB32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D61C0DCA196E3D3722F9303 /* Pods-Grove Support.debug.xcconfig */,
+				CC9CBE950523A6BCB5F2C397 /* Pods-Grove Support.release.xcconfig */,
+				2E90622C05A7EA1820409D7D /* Pods-Grove SupportTests.debug.xcconfig */,
+				59BC0A0207321DED68D665FE /* Pods-Grove SupportTests.release.xcconfig */,
+				C8A54D37C0F837CD85FC7BF5 /* Pods-Grove SupportUITests.debug.xcconfig */,
+				8BC3003547465B6689B046D8 /* Pods-Grove SupportUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC096DD522AF28890038BB7E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				FC096DF722AF288B0038BB7E /* Grove SupportTests */,
 				FC096E0222AF288B0038BB7E /* Grove SupportUITests */,
 				FC096DDF22AF28890038BB7E /* Products */,
+				FCB21FEF22B342D400EED086 /* Frameworks */,
+				7606CA6BF991D7B0F810AB32 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +161,18 @@
 		FC096DE022AF28890038BB7E /* Grove Support */ = {
 			isa = PBXGroup;
 			children = (
+				FCB05E5922B55E4A0046479E /* Grove Support.entitlements */,
 				FC096DE122AF28890038BB7E /* AppDelegate.swift */,
-				FC096DE322AF28890038BB7E /* FirstViewController.swift */,
-				FC096DE522AF28890038BB7E /* SecondViewController.swift */,
-				FC096DE722AF28890038BB7E /* Main.storyboard */,
+				FC096DE322AF28890038BB7E /* HomeViewController.swift */,
+				FC096DE522AF28890038BB7E /* MapViewController.swift */,
+				FCA3A15922B4BF5200F5F3D8 /* WebViewController.swift */,
+				FCA3A15B22B5486D00F5F3D8 /* TicketViewController.swift */,
+				FCB21FF522B3DDEF00EED086 /* TopBarViewController.swift */,
+				FC096E1122B0AABC0038BB7E /* RoundRectButton.swift */,
+				FCB21FEB22B341C800EED086 /* Feed */,
+				FCA3A16122B54E7000F5F3D8 /* HTML Files */,
 				FC096DEA22AF288B0038BB7E /* Assets.xcassets */,
+				FC096DE722AF28890038BB7E /* Main.storyboard */,
 				FC096DEC22AF288B0038BB7E /* LaunchScreen.storyboard */,
 				FC096DEF22AF288B0038BB7E /* Info.plist */,
 			);
@@ -128,6 +197,40 @@
 			path = "Grove SupportUITests";
 			sourceTree = "<group>";
 		};
+		FCA3A16122B54E7000F5F3D8 /* HTML Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCA3A16222B54E9600F5F3D8 /* common.js */,
+				FCA3A16422B54EC400F5F3D8 /* common.css */,
+				FCA3A15F22B54A5E00F5F3D8 /* spinnerbar.gif */,
+				FCA3A15D22B5491800F5F3D8 /* reload.html */,
+			);
+			path = "HTML Files";
+			sourceTree = "<group>";
+		};
+		FCB21FEB22B341C800EED086 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FCB21FEC22B341D100EED086 /* FeedItemWebViewController.swift */,
+				FCB21FED22B341D100EED086 /* FeedListViewController.swift */,
+				FCB21FEE22B341D100EED086 /* XmlParserManager.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FCB21FEF22B342D400EED086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCB05E5722B55DD80046479E /* libz.tbd */,
+				FCB05E5522B55DCE0046479E /* libc++.tbd */,
+				FCB21FF022B342D400EED086 /* WebKit.framework */,
+				13634D73C6C95718008984F6 /* Pods_Grove_Support.framework */,
+				48EFF298F307221976D62367 /* Pods_Grove_SupportTests.framework */,
+				6B64D9ADAA6A091C464E2BA4 /* Pods_Grove_SupportUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC096E0822AF288B0038BB7E /* Build configuration list for PBXNativeTarget "Grove Support" */;
 			buildPhases = (
+				07C0D854B25CFB464B33E2BB /* [CP] Check Pods Manifest.lock */,
 				FC096DDA22AF28890038BB7E /* Sources */,
 				FC096DDB22AF28890038BB7E /* Frameworks */,
 				FC096DDC22AF28890038BB7E /* Resources */,
@@ -152,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC096E0B22AF288B0038BB7E /* Build configuration list for PBXNativeTarget "Grove SupportTests" */;
 			buildPhases = (
+				A360BD0512ECBF9538EDB5CB /* [CP] Check Pods Manifest.lock */,
 				FC096DF022AF288B0038BB7E /* Sources */,
 				FC096DF122AF288B0038BB7E /* Frameworks */,
 				FC096DF222AF288B0038BB7E /* Resources */,
@@ -170,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC096E0E22AF288B0038BB7E /* Build configuration list for PBXNativeTarget "Grove SupportUITests" */;
 			buildPhases = (
+				30F6AA9901FA587A99F3D75A /* [CP] Check Pods Manifest.lock */,
 				FC096DFB22AF288B0038BB7E /* Sources */,
 				FC096DFC22AF288B0038BB7E /* Frameworks */,
 				FC096DFD22AF288B0038BB7E /* Resources */,
@@ -196,6 +302,11 @@
 				TargetAttributes = {
 					FC096DDD22AF28890038BB7E = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					FC096DF322AF288B0038BB7E = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -233,8 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC096DEE22AF288B0038BB7E /* LaunchScreen.storyboard in Resources */,
+				FCA3A15E22B5491800F5F3D8 /* reload.html in Resources */,
 				FC096DEB22AF288B0038BB7E /* Assets.xcassets in Resources */,
+				FCA3A16322B54E9600F5F3D8 /* common.js in Resources */,
+				FCA3A16022B54A5E00F5F3D8 /* spinnerbar.gif in Resources */,
 				FC096DE922AF28890038BB7E /* Main.storyboard in Resources */,
+				FCA3A16522B54EC400F5F3D8 /* common.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +369,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07C0D854B25CFB464B33E2BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grove Support-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30F6AA9901FA587A99F3D75A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grove SupportUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A360BD0512ECBF9538EDB5CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grove SupportTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC096DDA22AF28890038BB7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC096DE622AF28890038BB7E /* SecondViewController.swift in Sources */,
+				FCB21FF222B342EC00EED086 /* FeedItemWebViewController.swift in Sources */,
+				FCA3A15A22B4BF5200F5F3D8 /* WebViewController.swift in Sources */,
+				FCB21FF322B342EC00EED086 /* FeedListViewController.swift in Sources */,
+				FCB21FF422B342EC00EED086 /* XmlParserManager.swift in Sources */,
+				FC096DE622AF28890038BB7E /* MapViewController.swift in Sources */,
+				FCB21FF622B3DDEF00EED086 /* TopBarViewController.swift in Sources */,
+				FCA3A15C22B5486D00F5F3D8 /* TicketViewController.swift in Sources */,
 				FC096DE222AF28890038BB7E /* AppDelegate.swift in Sources */,
-				FC096DE422AF28890038BB7E /* FirstViewController.swift in Sources */,
+				FC096E1222B0AABC0038BB7E /* RoundRectButton.swift in Sources */,
+				FC096DE422AF28890038BB7E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,42 +625,53 @@
 		};
 		FC096E0922AF288B0038BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D61C0DCA196E3D3722F9303 /* Pods-Grove Support.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grove Support/Grove Support.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10.5;
 				DEVELOPMENT_TEAM = 2D4Z7WQ7RS;
 				INFOPLIST_FILE = "Grove Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.grovetech.co.Grove-Support";
+				MARKETING_VERSION = 10.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "jdb.Mac-Support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FC096E0A22AF288B0038BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9CBE950523A6BCB5F2C397 /* Pods-Grove Support.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grove Support/Grove Support.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10.5;
 				DEVELOPMENT_TEAM = 2D4Z7WQ7RS;
 				INFOPLIST_FILE = "Grove Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.grovetech.co.Grove-Support";
+				MARKETING_VERSION = 10.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "jdb.Mac-Support";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		FC096E0C22AF288B0038BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E90622C05A7EA1820409D7D /* Pods-Grove SupportTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +693,7 @@
 		};
 		FC096E0D22AF288B0038BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BC0A0207321DED68D665FE /* Pods-Grove SupportTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +715,7 @@
 		};
 		FC096E0F22AF288B0038BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A54D37C0F837CD85FC7BF5 /* Pods-Grove SupportUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +736,7 @@
 		};
 		FC096E1022AF288B0038BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3003547465B6689B046D8 /* Pods-Grove SupportUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

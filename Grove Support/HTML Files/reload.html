@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="common.js"></script>
+   <link rel="stylesheet" type="text/css" href="common.css" media="screen" />
+</head>
+
+<body onload="setTimeout(changeScreenSize, 2000)">
+    
+    <div id="alert" class="load">
+        <div class="picturecontainer">
+            <img src="spinnerbar.gif" class="horizontalcenter" style="width: 140px;">
+                <center><p style="margin-top: -60px;"><h3>Loading</h3></p></center>
+                </div>
+    </div>
+    
+    <div id="loading" style="width: 300px; margin: 0 auto;" onclick="reload()">
+        <br><br> <br><br>
+        <center><h3>You're Offline</h3></center>
+       <center> <button onclick="reload()" style="z-index: 100000000000;">Re-launch Chat</button></center>
+    </div>
+    
+    
+    <script>
+        window.supportpalAsyncInit = function () {
+            SupportPal.mount({
+                             "baseURL": "https://support.grovetech.co/helpwidget",
+                             "hash": "MgrcbbIdfb",
+                             "knowledgebase": {
+                             "enabled": false
+                             },
+                             "submitTicket": {
+                             "enabled": true,
+                             "departmentId": null,
+                             "subject": true
+                             },
+                             "type": "popup",
+                             "colour": "#63cbc4",
+                             "buttonIcon": "bubble2"
+                             });
+                             SupportPal.on('ready', function (el) {
+                                           $(el).find('.dock').click();
+                                           });
+                                           
+                                           $(document).on('click', '.icon-minus', function(){
+                                                          $(document).find('.dock').click();
+                                                          });
+                                                          
+                                                          
+                                                          
+                                                          
+        };
+    </script>
+    <script async src='https://support.grovetech.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=2.5.0'></script>
+</body>
+</html>
