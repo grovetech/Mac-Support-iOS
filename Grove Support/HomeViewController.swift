@@ -41,10 +41,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         WebSiteSupport = "https://grovetech.co/support/"
         WebSiteSupportTitle = "Support"
         
-        WebSitePricing = "https://grovetech.co/pricing/mac/starter/"
+        WebSitePricing = "https://grovetech.co/pricing/"
         WebSitePricingTitle = "Pricing"
         
-        WebSiteEmail = "https://grovetech.co/clients/emergency/"
+        WebSiteEmail = "https://grovetech.co/contact/"
         WebSiteEmailTitle = "Email Us"
         
         WebSiteCTO = "https://grovetech.co/products/cto/"
@@ -94,10 +94,23 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
     
+    func BCUrlConstructor (intentId: String, groupId: String, bodyParam: String) -> URL {
+    let bizId = "5c6b48ae-2c40-4014-8fe5-3d0d371fdee3" // Sets the Business ID
+     // Construct Business Chat URL using business ID, intent ID, group ID, and preset body text
+    let url : NSString = "https://bcrw.apple.com/sms:open?service=iMessage&recipient=urn:biz:\(bizId)&biz-intent-id=\(intentId)&bizgroup-id=\(groupId)&body=\(bodyParam)" as NSString
+    let urlString : NSString = url.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)! as NSString
+    let bcUrl : NSURL = NSURL(string: urlString as String)!
+    return bcUrl as URL
+    }
+    
     
     @IBAction func buttonPressed(sender: AnyObject) {
         // print("You Pressed the Footer Button!")
-        goWebsite()
+        //goWebsite()
+        
+        let url = BCUrlConstructor(intentId: "Grove", groupId: "Mac Support", bodyParam: "Hello, I am interested in support services")
+         // Launch Business Chat
+        UIApplication.shared.open(url)
     }
     
     let reuseIdentifier = "Cell" // also enter this string as the cell identifier in the storyboard
@@ -132,7 +145,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         Cell.backgroundColor = UIColor.white // make cell more visible in our example project
         Cell.layer.masksToBounds = true;
         Cell.layer.cornerRadius = 4;
-        
+
         return Cell
     }
     
@@ -154,7 +167,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
-        
+
         if indexPath.item == 0 {
              placecall()
         } else if indexPath.item == 1 {

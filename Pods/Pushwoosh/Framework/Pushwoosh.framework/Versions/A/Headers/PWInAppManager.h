@@ -38,21 +38,6 @@
 
 @optional
 
-/**
- Tells the delegate that In-App Message load stated
- */
-- (void)onWebViewStartLoad:(UIWebView*)webView;
-
-/**
- Tells the delegate that In-App Message load finished
- */
-- (void)onWebViewFinishLoad:(UIWebView*)webView;
-
-/**
- Tells the delegate that In-App Message is closing
- */
-- (void)onWebViewStartClose:(UIWebView*)webView;
-
 @end
 
 /**
