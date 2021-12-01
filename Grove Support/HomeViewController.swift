@@ -35,20 +35,20 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         WebSite = "https://grovetech.co/clients/book/"
         WebSiteTitle = "Book Appointment"
         
-        WebSiteServices = "https://grovetech.co/services/"
-        WebSiteServicesTitle = "Services"
+        WebSiteServices = "https://support.grovetech.co/"
+        WebSiteServicesTitle = "Open Ticket & Knowlegebase"
         
-        WebSiteSupport = "https://grovetech.co/support/"
-        WebSiteSupportTitle = "Support"
+        WebSiteSupport = "https://grovetech.co/products/hosted/network/"
+        WebSiteSupportTitle = "Network Support"
         
         WebSitePricing = "https://grovetech.co/pricing/"
-        WebSitePricingTitle = "Pricing"
+        WebSitePricingTitle = "Get Pricing"
         
-        WebSiteEmail = "https://grovetech.co/contact/"
-        WebSiteEmailTitle = "Email Us"
+        WebSiteEmail = "https://grovetech.co/products/hosted/fleet/"
+        WebSiteEmailTitle = "Heldesk Services"
         
-        WebSiteCTO = "https://grovetech.co/products/cto/"
-        WebSiteCTOTitle = "CTO Services"
+        WebSiteCTO = "https://grovetech.co/products/ciso/"
+        WebSiteCTOTitle = "Cybersecurity Services"
     }
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -119,12 +119,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var recipePhotos: [UIImage] = [
         UIImage(named: "Phone.png")!,
         UIImage(named: "bag-and-hands.jpg")!,
-        UIImage(named: "irish-hands.jpg")!,
+        UIImage(named: "network.jpg")!,
         UIImage(named: "info.jpg")!,
         UIImage(named: "Message.png")!,
         UIImage(named: "ES_ITstrategy.png")!
     ];
-    var iconLabels = ["Call Us", "Services", "Support", "Get Pricing", "E-Mail Us", "Virtual CTO"];
+    var iconLabels = ["Call Us", "Open A Ticket", "Network Support", "Get Pricing", "Heldesk Services", "Cybersecurity"];
     
     // MARK: - UICollectionViewDataSource protocol
     
@@ -193,11 +193,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let spaceBetweenCells: CGFloat = 10
         let dim = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
         
-        return CGSize(width: (dim - 10), height: (dim - 10))
+        return CGSize(width: (dim - 10), height: (dim - 20))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        
     }
     
     override var prefersStatusBarHidden: Bool {

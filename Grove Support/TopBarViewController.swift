@@ -18,7 +18,7 @@ class TopBarViewController: UIViewController {
         super.viewDidLoad()
         
         view.translatesAutoresizingMaskIntoConstraints = true
-        WebSite = "https://grovetech.co/clients/book/"
+        WebSite = "https://calendly.com/grove-technologies"
         WebSiteTitle = "Book Appointment"
     }
     
