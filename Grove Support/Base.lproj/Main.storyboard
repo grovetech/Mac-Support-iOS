@@ -122,7 +122,7 @@
                             <constraint firstItem="kum-f0-3yZ" firstAttribute="top" secondItem="ob7-Yj-Nqv" secondAttribute="top" id="zcH-ng-387"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house-7" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="collectionView" destination="xuR-4r-0kE" id="WUf-yV-peu"/>
                         <segue destination="L5l-Th-97v" kind="presentation" identifier="WebViewFooter" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="AxE-nO-ePS"/>
@@ -295,7 +295,7 @@
                             <constraint firstItem="GGY-CG-FIC" firstAttribute="bottom" secondItem="jIU-fa-z14" secondAttribute="bottom" id="yDX-P3-yhz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Locations" image="Marker" id="tAJ-nM-fHJ"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="pin-map-7" id="tAJ-nM-fHJ"/>
                     <connections>
                         <outlet property="mapView" destination="GGY-CG-FIC" id="6BW-QW-IsB"/>
                     </connections>
@@ -398,7 +398,7 @@
         <scene sceneID="Zfo-11-cdo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvR-ww-Ls7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" image="Google News" id="vdk-Hw-DQC"/>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper-7" id="vdk-Hw-DQC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mXj-Cm-l31">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -449,7 +449,7 @@
                             <constraint firstItem="Ihy-QR-cp2" firstAttribute="leading" secondItem="Mye-Xg-dO6" secondAttribute="leading" id="zSk-95-i6T"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tickets" image="tickets" id="wD1-NI-wAQ"/>
+                    <tabBarItem key="tabBarItem" title="Tickets" image="tag-7" id="wD1-NI-wAQ"/>
                     <connections>
                         <outlet property="webView" destination="Mye-Xg-dO6" id="K3e-l8-IDP"/>
                     </connections>
@@ -494,7 +494,7 @@
                             <constraint firstItem="fHa-fq-xqT" firstAttribute="top" secondItem="j0c-ed-Vok" secondAttribute="top" id="uA8-kO-iyJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reviews" image="TopCharts" id="7sp-zG-BgD"/>
+                    <tabBarItem key="tabBarItem" title="Reviews" image="star-7" id="7sp-zG-BgD"/>
                     <navigationItem key="navigationItem" id="X86-bI-aHj"/>
                     <connections>
                         <outlet property="webView" destination="LIY-pz-6Q5" id="pPL-fd-Ffu"/>
@@ -506,17 +506,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4cu-fs-UQr"/>
+        <segue reference="EDy-ea-GQ7"/>
         <segue reference="sEK-9c-NaJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar" width="100" height="100"/>
-        <image name="Google News" width="25" height="25"/>
-        <image name="Home" width="25" height="25"/>
-        <image name="Marker" width="25" height="25"/>
         <image name="Office Phone" width="100" height="100"/>
-        <image name="TopCharts" width="27" height="23.5"/>
+        <image name="house-7" width="30" height="30"/>
         <image name="logo-1" width="159" height="52"/>
-        <image name="tickets" width="25" height="25"/>
+        <image name="newspaper-7" width="30" height="30"/>
+        <image name="pin-map-7" width="30" height="30"/>
+        <image name="star-7" width="30" height="30"/>
+        <image name="tag-7" width="30" height="30"/>
     </resources>
 </document>
