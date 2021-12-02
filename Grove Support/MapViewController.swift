@@ -68,6 +68,9 @@ class mapViewController: UIViewController {
         let location8 = CLLocationCoordinate2D(latitude:  43.7182197,
                                                longitude: -79.4482688)
         
+        let location9 = CLLocationCoordinate2D(latitude:  45.902399,
+                                               longitude: -94.548914)
+        
         
         // 2
         let span = MKCoordinateSpan(latitudeDelta: 30.95, longitudeDelta: 45.95)
@@ -124,6 +127,12 @@ class mapViewController: UIViewController {
         annotation8.title = "Grove Technologies"
         annotation8.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation8)
+        
+        let annotation9 = MKPointAnnotation()
+        annotation9.coordinate = location9
+        annotation9.title = "Grove Technologies"
+        annotation9.subtitle = "Nationwide Fully Remote & Distributed"
+        mapView.addAnnotation(annotation9)
         
         
         
