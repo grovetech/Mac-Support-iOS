@@ -19,6 +19,7 @@
 		FC096DF922AF288B0038BB7E /* Grove_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096DF822AF288B0038BB7E /* Grove_SupportTests.swift */; };
 		FC096E0422AF288B0038BB7E /* Grove_SupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096E0322AF288B0038BB7E /* Grove_SupportUITests.swift */; };
 		FC096E1222B0AABC0038BB7E /* RoundRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC096E1122B0AABC0038BB7E /* RoundRectButton.swift */; };
+		FC2ED028275A7413005C3129 /* tailwind.min.css in Resources */ = {isa = PBXBuildFile; fileRef = FC2ED027275A7413005C3129 /* tailwind.min.css */; };
 		FC462D9C2756FF4F0069FA87 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC462D9B2756FF4F0069FA87 /* ReviewViewController.swift */; };
 		FC462D9E2756FF9C0069FA87 /* reviews.html in Resources */ = {isa = PBXBuildFile; fileRef = FC462D9D2756FF9C0069FA87 /* reviews.html */; };
 		FCA3A15A22B4BF5200F5F3D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3A15922B4BF5200F5F3D8 /* WebViewController.swift */; };
@@ -78,6 +79,7 @@
 		FC096E0322AF288B0038BB7E /* Grove_SupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grove_SupportUITests.swift; sourceTree = "<group>"; };
 		FC096E0522AF288B0038BB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC096E1122B0AABC0038BB7E /* RoundRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRectButton.swift; sourceTree = "<group>"; };
+		FC2ED027275A7413005C3129 /* tailwind.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tailwind.min.css; sourceTree = "<group>"; };
 		FC462D9B2756FF4F0069FA87 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		FC462D9D2756FF9C0069FA87 /* reviews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reviews.html; sourceTree = "<group>"; };
 		FCA3A15922B4BF5200F5F3D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		FCA3A16122B54E7000F5F3D8 /* HTML Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC2ED027275A7413005C3129 /* tailwind.min.css */,
 				FCA3A16222B54E9600F5F3D8 /* common.js */,
 				FCA3A16422B54EC400F5F3D8 /* common.css */,
 				FCA3A15F22B54A5E00F5F3D8 /* spinnerbar.gif */,
@@ -352,6 +355,7 @@
 				FC096DEE22AF288B0038BB7E /* LaunchScreen.storyboard in Resources */,
 				FCA3A15E22B5491800F5F3D8 /* reload.html in Resources */,
 				FC096DEB22AF288B0038BB7E /* Assets.xcassets in Resources */,
+				FC2ED028275A7413005C3129 /* tailwind.min.css in Resources */,
 				FCA3A16322B54E9600F5F3D8 /* common.js in Resources */,
 				FC462D9E2756FF9C0069FA87 /* reviews.html in Resources */,
 				FCA3A16022B54A5E00F5F3D8 /* spinnerbar.gif in Resources */,
