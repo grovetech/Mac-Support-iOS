@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -123,6 +124,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house-7" id="acW-dT-cKf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="xuR-4r-0kE" id="WUf-yV-peu"/>
                         <segue destination="L5l-Th-97v" kind="presentation" identifier="WebViewFooter" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="AxE-nO-ePS"/>
@@ -141,10 +143,12 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="tintColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -172,7 +176,7 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="31" id="2Ir-n1-UCo"/>
                                     <constraint firstAttribute="height" constant="31" id="MZp-td-Ps9"/>
                                 </constraints>
-                                <state key="normal" title="NOOOOO" image="Office Phone"/>
+                                <state key="normal" image="Office Phone"/>
                                 <connections>
                                     <action selector="makeCall:" destination="smn-ty-gVc" eventType="touchUpInside" id="baH-LH-0eQ"/>
                                 </connections>
@@ -183,7 +187,7 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="31" id="amg-Lf-OwU"/>
                                     <constraint firstAttribute="height" constant="31" id="b2d-rA-Dfi"/>
                                 </constraints>
-                                <state key="normal" title="WHYYYYY" image="Calendar"/>
+                                <state key="normal" image="Calendar"/>
                                 <connections>
                                     <action selector="makeApt:" destination="smn-ty-gVc" eventType="touchUpInside" id="BBQ-ak-zsB"/>
                                 </connections>
@@ -296,13 +300,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Locations" image="pin-map-7" id="tAJ-nM-fHJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="GGY-CG-FIC" id="6BW-QW-IsB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXs-C7-ev4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1487" y="906"/>
+            <point key="canvasLocation" x="-1488.75" y="905.28169014084506"/>
         </scene>
         <!--News-->
         <scene sceneID="4Ku-bf-8p3">
@@ -386,6 +391,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="News" id="vTK-tr-t1i"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="XMv-FX-BWp" id="bic-lx-ppj"/>
                     </connections>
@@ -450,6 +456,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tickets" image="tag-7" id="wD1-NI-wAQ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="Mye-Xg-dO6" id="K3e-l8-IDP"/>
                     </connections>
@@ -466,8 +473,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" misplaced="YES" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIY-pz-6Q5">
-                                <rect key="frame" x="0.0" y="104" width="320" height="415"/>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIY-pz-6Q5">
+                                <rect key="frame" x="0.0" y="86" width="320" height="433"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
@@ -496,6 +503,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Reviews" image="star-7" id="7sp-zG-BgD"/>
                     <navigationItem key="navigationItem" id="X86-bI-aHj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="LIY-pz-6Q5" id="pPL-fd-Ffu"/>
                     </connections>
@@ -506,8 +514,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EDy-ea-GQ7"/>
-        <segue reference="sEK-9c-NaJ"/>
+        <segue reference="yq2-Mv-cUg"/>
+        <segue reference="K4u-OB-dey"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar" width="100" height="100"/>
@@ -518,5 +526,8 @@
         <image name="pin-map-7" width="30" height="30"/>
         <image name="star-7" width="30" height="30"/>
         <image name="tag-7" width="30" height="30"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

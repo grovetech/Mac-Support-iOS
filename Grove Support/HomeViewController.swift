@@ -32,6 +32,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        if #available(iOS 15.0, *) {
+                let appearance = UITabBarAppearance()
+                UITabBar.appearance().scrollEdgeAppearance = appearance
+            }
+        
+        
         WebSite = "https://grovetech.co/clients/book/"
         WebSiteTitle = "Book Appointment"
         
@@ -193,7 +199,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         let spaceBetweenCells: CGFloat = 10
         let dim = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
         
-        return CGSize(width: (dim - 10), height: (dim - 20))
+        return CGSize(width: (dim - 10), height: (dim - 14))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
