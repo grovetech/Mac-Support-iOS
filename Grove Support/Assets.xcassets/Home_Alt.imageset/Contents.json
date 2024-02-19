@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "iOS Splash Screen (640).png",
+      "filename" : "Home_Alt.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iOS Splash Screen (640) 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iOS Splash Screen (640) 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

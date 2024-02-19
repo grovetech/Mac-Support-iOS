@@ -18,13 +18,13 @@ class TopBarViewController: UIViewController {
         super.viewDidLoad()
         
         view.translatesAutoresizingMaskIntoConstraints = true
-        WebSite = "https://calendly.com/grove-technologies"
+        WebSite = "https://meetings.hubspot.com/jacksegar/default-meeting-link"
         WebSiteTitle = "Book Appointment"
     }
     
     func placecall() {
         
-        let phone_number = "18622518712"
+        let phone_number = "18002027400"
         
         if let url = URL(string: "tel://\(phone_number)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {

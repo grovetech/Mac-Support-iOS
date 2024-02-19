@@ -67,7 +67,7 @@ class XmlParserManager: NSObject, XMLParserDelegate {
                 elements.setObject(ftitle, forKey: "title" as NSCopying)
             }
             if flink != "" {
-                elements.setObject(flink, forKey: "permalink" as NSCopying)
+                elements.setObject(flink, forKey: "link" as NSCopying)
             }
             if fdescription != "" {
                 elements.setObject(fdescription, forKey: "description" as NSCopying)
@@ -82,7 +82,7 @@ class XmlParserManager: NSObject, XMLParserDelegate {
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         if element.isEqual(to: "title") {
             ftitle.append(string)
-        } else if element.isEqual(to: "permalink") {
+        } else if element.isEqual(to: "link") {
             flink.append(string)
         } else if element.isEqual(to: "description") {
             fdescription.append(string)

@@ -8,58 +8,44 @@
 
 import UIKit
 import CoreData
-import Pushwoosh
 import UserNotifications
 
 @UIApplicationMain
 
-class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        PushNotificationManager.push().delegate = self
+        
         
         //set default Pushwoosh delegate for iOS10 foreground push handling
         if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = PushNotificationManager.push().notificationCenterDelegate
         }
         // track application open statistics
-        PushNotificationManager.push().sendAppOpen()
         
         // register for push notifications!
-        PushNotificationManager.push().registerForPushNotifications()
         return true
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        PushNotificationManager.push().handlePushRegistration(deviceToken as Data)
+        
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        PushNotificationManager.push().handlePushRegistrationFailure(error)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         if #available(iOS 10.0, *) {
             completionHandler(UIBackgroundFetchResult.noData)
         } else {
-            PushNotificationManager.push().handlePushReceived(userInfo)
+            
             completionHandler(UIBackgroundFetchResult.noData)
         }
     }
-    //this event is fired when the push gets received
-    func onPushReceived(_ pushManager: PushNotificationManager!, withNotification pushNotification: [AnyHashable : Any]!, onStart: Bool) {
-        print("Push notification received: \(String(describing: pushNotification))")
-        // shows a push is received. Implement passive reaction to a push here, such as UI update or data download.
-    }
-    //this event is fired when user taps the notification
-    func onPushAccepted(_ pushManager: PushNotificationManager!, withNotification pushNotification: [AnyHashable : Any]!, onStart: Bool) {
-        print("Push notification accepted: \(String(describing: pushNotification))")
-        // shows a user tapped the notification. Implement user interaction, such as showing push details
-    }
+    
     
     
 

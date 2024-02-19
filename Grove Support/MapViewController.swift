@@ -80,57 +80,57 @@ class mapViewController: UIViewController {
         //3
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
-        annotation.title = "Grove Technologies"
+        annotation.title = "Interlaced.io"
         annotation.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation)
         
         let annotation2 = MKPointAnnotation()
         annotation2.coordinate = location2
-        annotation2.title = "Grove Technologies"
+        annotation2.title = "Interlaced.io"
         annotation2.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation2)
         
         let annotation3 = MKPointAnnotation()
         annotation3.coordinate = location3
-        annotation3.title = "Grove Technologies"
+        annotation3.title = "Interlaced.io"
         annotation3.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation3)
         
         
         let annotation4 = MKPointAnnotation()
         annotation4.coordinate = location4
-        annotation4.title = "Grove Technologies"
+        annotation4.title = "Interlaced.io"
         annotation4.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation4)
         
         let annotation5 = MKPointAnnotation()
         annotation5.coordinate = location5
-        annotation5.title = "Grove Technologies"
+        annotation5.title = "Interlaced.io"
         annotation5.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation5)
         
         let annotation6 = MKPointAnnotation()
         annotation6.coordinate = location6
-        annotation6.title = "Grove Technologies"
+        annotation6.title = "Interlaced.io"
         annotation6.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation6)
         
         
         let annotation7 = MKPointAnnotation()
         annotation7.coordinate = location7
-        annotation7.title = "Grove Technologies"
+        annotation7.title = "Interlaced.io"
         annotation7.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation7)
         
         let annotation8 = MKPointAnnotation()
         annotation8.coordinate = location8
-        annotation8.title = "Grove Technologies"
+        annotation8.title = "Interlaced.io"
         annotation8.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation8)
         
         let annotation9 = MKPointAnnotation()
         annotation9.coordinate = location9
-        annotation9.title = "Grove Technologies"
+        annotation9.title = "Interlaced.io"
         annotation9.subtitle = "Nationwide Fully Remote & Distributed"
         mapView.addAnnotation(annotation9)
         
@@ -141,7 +141,7 @@ class mapViewController: UIViewController {
         
     }
     
-    class CustomAnnotationView: MKPinAnnotationView {  // or nowadays, you might use MKMarkerAnnotationView
+    class CustomAnnotationView: MKMarkerAnnotationView {  // or nowadays, you might use MKMarkerAnnotationView
         override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
             super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
             

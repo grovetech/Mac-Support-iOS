@@ -38,22 +38,22 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             }
         
         
-        WebSite = "https://grovetech.co/clients/book/"
+        WebSite = "https://meetings.hubspot.com/jacksegar/default-meeting-link"
         WebSiteTitle = "Book Appointment"
         
-        WebSiteServices = "https://support.grovetech.co/"
+        WebSiteServices = "https://interlaced.myportallogin.com/"
         WebSiteServicesTitle = "Open Ticket & Knowlegebase"
         
-        WebSiteSupport = "https://grovetech.co/products/hosted/network/"
+        WebSiteSupport = "https://interlaced.myportallogin.com/"
         WebSiteSupportTitle = "Network Support"
         
-        WebSitePricing = "https://grovetech.co/pricing/"
-        WebSitePricingTitle = "Get Pricing"
+        WebSitePricing = "https://meetings.hubspot.com/jacksegar/default-meeting-link"
+        WebSitePricingTitle = "Contact Sales"
         
-        WebSiteEmail = "https://grovetech.co/products/hosted/fleet/"
+        WebSiteEmail = "https://interlaced.io/end-user-support/"
         WebSiteEmailTitle = "Heldesk Services"
         
-        WebSiteCTO = "https://grovetech.co/products/ciso/"
+        WebSiteCTO = "https://interlaced.io/grove-tech/"
         WebSiteCTOTitle = "Cybersecurity Services"
     }
     
@@ -112,11 +112,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBAction func buttonPressed(sender: AnyObject) {
         // print("You Pressed the Footer Button!")
-        //goWebsite()
+        goWebsite()
         
-        let url = BCUrlConstructor(intentId: "Grove", groupId: "Mac Support", bodyParam: "Hello, I am interested in support services")
+        //let url = BCUrlConstructor(intentId: "Grove", groupId: "Mac Support", bodyParam: "Hello, I am interested in support services")
          // Launch Business Chat
-        UIApplication.shared.open(url)
+        //UIApplication.shared.open(url)
     }
     
     let reuseIdentifier = "Cell" // also enter this string as the cell identifier in the storyboard
@@ -157,7 +157,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func placecall() {
         
-        let phone_number = "18622518712"
+        let phone_number = "18002027400"
         
         if let url = URL(string: "tel://\(phone_number)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {

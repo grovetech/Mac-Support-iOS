@@ -11,7 +11,7 @@ import UIKit
 class FeedListViewController: UITableViewController, XMLParserDelegate {
 
     var myFeed : NSArray = []
-    var feedImgs: [AnyObject] = []
+    //var feedImgs: [AnyObject] = []
     var url: URL!
 
     override func viewDidLoad() {
@@ -19,7 +19,7 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 140
-        tableView.backgroundColor = UIColor(red: 0.10, green: 0.74, blue: 0.44, alpha: 1.00)
+        tableView.backgroundColor = UIColor(red: 0.19, green: 0.80, blue: 0.83, alpha: 1.00)
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
@@ -32,7 +32,7 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
     }
 
     func loadData() {
-        url = URL(string: "https://grovetech.co/app/out.xml")!
+        url = URL(string: "https://interlaced.io/feed/")!
         loadRss(url);
     }
 
@@ -42,7 +42,7 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
         let myParser : XmlParserManager = XmlParserManager().initWithURL(data) as! XmlParserManager
 
         // Put feed in array.
-        feedImgs = myParser.img as [AnyObject]
+       // feedImgs = myParser.img as [AnyObject]
         myFeed = myParser.feeds
         tableView.reloadData()
     }
@@ -54,7 +54,7 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openPage" {
             let indexPath: IndexPath = self.tableView.indexPathForSelectedRow!
-            let selectedFURL: String = (myFeed[indexPath.row] as AnyObject).object(forKey: "permalink") as! String
+            let selectedFURL: String = (myFeed[indexPath.row] as AnyObject).object(forKey: "link") as! String
 
             // Instance of our feedpageviewcontrolelr.
             let fivc: FeedItemWebViewController = segue.destination as! FeedItemWebViewController
@@ -83,18 +83,18 @@ class FeedListViewController: UITableViewController, XMLParserDelegate {
         }
 
         // Load feed iamge.
-        let url = NSURL(string:feedImgs[indexPath.row] as! String)
-        let data = NSData(contentsOf:url! as URL)
-        var image = UIImage(data:data! as Data)
+        //let url = NSURL(string:feedImgs[indexPath.row] as! String)
+       // let data = NSData(contentsOf:url! as URL)
+       // var image = UIImage(data:data! as Data)
 
-        image = resizeImage(image: image!, toTheSize: CGSize(width: 70, height: 70))
+       // image = resizeImage(image: image!, toTheSize: CGSize(width: 70, height: 70))
 
-        let cellImageLayer: CALayer?  = cell.imageView?.layer
+       // let cellImageLayer: CALayer?  = cell.imageView?.layer
 
-        cellImageLayer!.cornerRadius = 35
-        cellImageLayer!.masksToBounds = true
+       // cellImageLayer!.cornerRadius = 35
+       // cellImageLayer!.masksToBounds = true
 
-        cell.imageView?.image = image
+       // cell.imageView?.image = image
         cell.textLabel?.text = (myFeed.object(at: indexPath.row) as AnyObject).object(forKey: "title") as? String
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.numberOfLines = 0

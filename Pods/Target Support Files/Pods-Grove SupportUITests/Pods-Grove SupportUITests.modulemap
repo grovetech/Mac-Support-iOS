@@ -1,6 +1,0 @@
-framework module Pods_Grove_SupportUITests {
-  umbrella header "Pods-Grove SupportUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

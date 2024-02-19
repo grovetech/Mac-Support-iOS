@@ -15,8 +15,8 @@ class FeedItemWebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedFeedURL =  selectedFeedURL?.replacingOccurrences(of: " ", with:"")
-        selectedFeedURL =  selectedFeedURL?.replacingOccurrences(of: "\n", with:"")
+        //selectedFeedURL =  selectedFeedURL?.replacingOccurrences(of: " ", with:"")
+        selectedFeedURL =  selectedFeedURL?.replacingOccurrences(of: "\n\t\t", with:"")
         webView.load(URLRequest(url: URL(string: selectedFeedURL! as String)!))
     }
     

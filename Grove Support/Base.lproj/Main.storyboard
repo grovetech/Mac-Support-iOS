@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-Yj-Nqv" userLabel="Home Container View">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="89"/>
+                                <rect key="frame" x="0.0" y="20" width="319" height="69"/>
                                 <connections>
                                     <segue destination="smn-ty-gVc" kind="embed" identifier="embedContainer2" id="GAd-hV-cIl"/>
                                 </connections>
                             </containerView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" contentInsetAdjustmentBehavior="scrollableAxes" delaysContentTouches="NO" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xuR-4r-0kE" userLabel="Home Collection View">
-                                <rect key="frame" x="0.0" y="88" width="319" height="431"/>
+                                <rect key="frame" x="0.0" y="108" width="319" height="411"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="8" id="H0v-9x-hPb">
                                     <size key="itemSize" width="205" height="127"/>
@@ -48,7 +48,7 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.94999998807907104" tag="50" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfP-KZ-hMp">
                                                             <rect key="frame" x="0.0" y="120" width="205" height="8"/>
-                                                            <color key="backgroundColor" red="0.55294117647058827" green="0.82745098039215681" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                                             <rect key="frame" x="28" y="20" width="263" height="35"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <state key="normal" title="Chat with a technician">
+                                            <state key="normal" title="Contact Sales">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
@@ -96,7 +96,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.10196078431372549" green="0.74117647058823533" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="gb7-XJ-Q4y" firstAttribute="centerY" secondItem="bET-Fa-1Vt" secondAttribute="centerY" id="LbM-JL-pyT"/>
                                         <constraint firstItem="gb7-XJ-Q4y" firstAttribute="leading" secondItem="bET-Fa-1Vt" secondAttribute="leadingMargin" constant="20" id="QPc-Aj-0oO"/>
@@ -111,7 +111,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kum-f0-3yZ"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.74117647060000003" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ob7-Yj-Nqv" firstAttribute="leading" secondItem="xuR-4r-0kE" secondAttribute="leading" id="7mf-OF-irB"/>
                             <constraint firstItem="kum-f0-3yZ" firstAttribute="trailing" secondItem="xuR-4r-0kE" secondAttribute="trailing" constant="1" id="9vr-cP-yju"/>
@@ -167,7 +167,7 @@
             <objects>
                 <viewController id="smn-ty-gVc" customClass="TopBarViewController" customModule="Grove_Support" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5KC-8R-SYX">
-                        <rect key="frame" x="0.0" y="0.0" width="319" height="109"/>
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="69"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tw-nC-ejz">
@@ -193,7 +193,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-qx-6Da">
-                                <rect key="frame" x="58" y="19" width="203" height="52"/>
+                                <rect key="frame" x="58" y="19" width="203" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="203" id="ajo-3u-Up4"/>
                                 </constraints>
@@ -283,15 +283,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-CG-FIC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-CG-FIC">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <connections>
                                     <outlet property="delegate" destination="0GG-ea-l8J" id="4pa-EC-EHR"/>
                                 </connections>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jIU-fa-z14"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.74117647060000003" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GGY-CG-FIC" firstAttribute="centerX" secondItem="jIU-fa-z14" secondAttribute="centerX" id="3CU-l9-YMb"/>
                             <constraint firstItem="GGY-CG-FIC" firstAttribute="leading" secondItem="kfk-ap-6C0" secondAttribute="leading" id="pME-bJ-6vC"/>
@@ -299,7 +299,7 @@
                             <constraint firstItem="GGY-CG-FIC" firstAttribute="bottom" secondItem="jIU-fa-z14" secondAttribute="bottom" id="yDX-P3-yhz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Locations" image="pin-map-7" id="tAJ-nM-fHJ"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="compass-point-7" id="tAJ-nM-fHJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="GGY-CG-FIC" id="6BW-QW-IsB"/>
@@ -320,10 +320,10 @@
                         <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="LBb-Pe-Bcu" detailTextLabel="88t-8N-JJs" style="IBUITableViewCellStyleSubtitle" id="987-yb-C5e">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="987-yb-C5e" id="KeH-Zi-ZoI">
-                                    <rect key="frame" x="0.0" y="0.0" width="294.5" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293.5" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBb-Pe-Bcu">
@@ -359,6 +359,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="ejE-BP-aDZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWG-a9-CzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,7 +376,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMv-FX-BWp">
-                                <rect key="frame" x="0.0" y="44" width="320" height="475"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -382,7 +385,7 @@
                             </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CHw-R8-yjw"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.74117647060000003" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XMv-FX-BWp" firstAttribute="top" secondItem="CHw-R8-yjw" secondAttribute="top" id="a5v-U0-5LO"/>
                             <constraint firstItem="XMv-FX-BWp" firstAttribute="bottom" secondItem="CHw-R8-yjw" secondAttribute="bottom" id="aDY-9z-cnD"/>
@@ -407,7 +410,7 @@
                     <tabBarItem key="tabBarItem" title="News" image="newspaper-7" id="vdk-Hw-DQC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mXj-Cm-l31">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -428,7 +431,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mye-Xg-dO6">
-                                <rect key="frame" x="0.0" y="86" width="320" height="433"/>
+                                <rect key="frame" x="0.0" y="106" width="320" height="413"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -436,14 +439,14 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihy-QR-cp2">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="109"/>
+                                <rect key="frame" x="0.0" y="20" width="319" height="89"/>
                                 <connections>
                                     <segue destination="smn-ty-gVc" kind="embed" identifier="embedContainer1" id="K4u-OB-dey"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ROb-4Y-EPl"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.74117647060000003" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Mye-Xg-dO6" secondAttribute="trailing" id="CbK-Zw-MYa"/>
                             <constraint firstItem="Ihy-QR-cp2" firstAttribute="trailing" secondItem="Mye-Xg-dO6" secondAttribute="trailing" constant="-1" id="Lzp-xX-HI3"/>
@@ -455,7 +458,7 @@
                             <constraint firstItem="Ihy-QR-cp2" firstAttribute="leading" secondItem="Mye-Xg-dO6" secondAttribute="leading" id="zSk-95-i6T"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tickets" image="tag-7" id="wD1-NI-wAQ"/>
+                    <tabBarItem key="tabBarItem" title="Tickets" image="lifebuoy-7" id="wD1-NI-wAQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webView" destination="Mye-Xg-dO6" id="K3e-l8-IDP"/>
@@ -465,7 +468,7 @@
             </objects>
             <point key="canvasLocation" x="-352.17391304347831" y="904.6875"/>
         </scene>
-        <!--Reviews-->
+        <!--Book-->
         <scene sceneID="SE2-Ec-02E">
             <objects>
                 <viewController id="MT8-kb-b4y" customClass="ReviewViewController" customModule="Grove_Support" customModuleProvider="target" sceneMemberID="viewController">
@@ -474,7 +477,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIY-pz-6Q5">
-                                <rect key="frame" x="0.0" y="86" width="320" height="433"/>
+                                <rect key="frame" x="0.0" y="106" width="320" height="413"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
@@ -482,14 +485,14 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0c-ed-Vok">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="109"/>
+                                <rect key="frame" x="0.0" y="20" width="319" height="89"/>
                                 <connections>
                                     <segue destination="smn-ty-gVc" kind="embed" id="sEK-9c-NaJ"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fHa-fq-xqT"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.74117647060000003" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.83137254900000002" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LIY-pz-6Q5" firstAttribute="bottom" secondItem="fHa-fq-xqT" secondAttribute="bottom" id="3ek-lp-o7U"/>
                             <constraint firstItem="j0c-ed-Vok" firstAttribute="leading" secondItem="LIY-pz-6Q5" secondAttribute="leading" id="JHy-0T-5GM"/>
@@ -501,7 +504,7 @@
                             <constraint firstItem="fHa-fq-xqT" firstAttribute="top" secondItem="j0c-ed-Vok" secondAttribute="top" id="uA8-kO-iyJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reviews" image="star-7" id="7sp-zG-BgD"/>
+                    <tabBarItem key="tabBarItem" title="Book" image="calendar-7" id="7sp-zG-BgD"/>
                     <navigationItem key="navigationItem" id="X86-bI-aHj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -514,20 +517,20 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yq2-Mv-cUg"/>
-        <segue reference="K4u-OB-dey"/>
+        <segue reference="4cu-fs-UQr"/>
+        <segue reference="GAd-hV-cIl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Calendar" width="100" height="100"/>
         <image name="Office Phone" width="100" height="100"/>
+        <image name="calendar-7" width="30" height="30"/>
+        <image name="compass-point-7" width="30" height="30"/>
         <image name="house-7" width="30" height="30"/>
-        <image name="logo-1" width="159" height="52"/>
+        <image name="lifebuoy-7" width="30" height="30"/>
+        <image name="logo-1" width="159" height="37"/>
         <image name="newspaper-7" width="30" height="30"/>
-        <image name="pin-map-7" width="30" height="30"/>
-        <image name="star-7" width="30" height="30"/>
-        <image name="tag-7" width="30" height="30"/>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

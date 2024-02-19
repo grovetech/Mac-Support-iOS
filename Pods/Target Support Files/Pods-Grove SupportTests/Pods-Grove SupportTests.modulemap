@@ -1,6 +1,0 @@
-framework module Pods_Grove_SupportTests {
-  umbrella header "Pods-Grove SupportTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
